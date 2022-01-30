@@ -20,4 +20,3 @@ router
   .route("/:userId/friend/:friendId")
   .put(updateFriend)
   .delete(deleteFriend);
-//post user to user friend list, delete user from user friend list
