@@ -53,7 +53,7 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   //Update Friends List
-  updateFriend(req, res) {
+  addFriend(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
       { $addToSet: { friends: req.params.friendId } },
