@@ -52,7 +52,7 @@ module.exports = {
       .then(() => res.json({ message: "User and thoughts deleted!" }))
       .catch((err) => res.status(500).json(err));
   },
-  //Update Friends List
+  //add to Friends List
   addFriend(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
@@ -63,6 +63,20 @@ module.exports = {
         !user
           ? res.status(404).json({ message: "No user found with that Id." })
           : res.json(user)
+      )
+      .catch((err) => res.status(500).json(err));
+  },
+  //delete Friend
+  deleteFriend(req, res) {
+    User.findOneAndUpdate(
+      { _id: req.params.userId },
+      { $pull: { friends: req.params.friendId } },
+      { runValidators: true, new: true }
+    )
+      .then((friend) =>
+        !friend
+          ? res.status(404).json({ message: "No friend found with that Id" })
+          : res.json(friend)
       )
       .catch((err) => res.status(500).json(err));
   },
