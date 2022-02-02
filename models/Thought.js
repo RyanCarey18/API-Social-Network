@@ -2,7 +2,7 @@ const { Schema, Types, model } = require("mongoose");
 const reactionSchema = require("./Reaction");
 
 function dateFormat(createdAt) {
-  const date = new Date(createdAt);
+  let date = new Date(createdAt);
   return date.toLocaleDateString();
 }
 
@@ -17,7 +17,7 @@ const thoughtSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      get: dateFormat,
+      get: (timestamp) => dateFormat(timestamp),
     },
     username: {
       type: String,
@@ -28,6 +28,7 @@ const thoughtSchema = new Schema(
   {
     toJSON: {
       virtuals: true,
+      getters: true,
     },
     id: false,
   }
