@@ -14,8 +14,6 @@ A functioning back end api for a social network.
 
 - [Contributing](#Contributing)
 
-- [Tests](#Tests)
-
 - [License](#License)
 
 - [Questions](#Questions)
@@ -47,4 +45,3 @@ Not accepting contributions.
 If you have any questions about the repository you can contact me at ryan.carey18@gmail.com. Otherwise you can find me on GitHub [here](https://github.com/ryancarey18).
 
 
-![Products Get](https://user-images.githubusercontent.com/86500418/146491246-112382b6-a59f-43e4-a88d-6b2881d5f9ff.png)
