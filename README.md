@@ -22,7 +22,6 @@ A functioning back end api for a social network.
 
 Do the following to install:
 
-
 ```
 npm i
 
@@ -44,4 +43,6 @@ Not accepting contributions.
 
 If you have any questions about the repository you can contact me at ryan.carey18@gmail.com. Otherwise you can find me on GitHub [here](https://github.com/ryancarey18).
 
+## Video
 
+To watch a video of the routes click [here](https://watch.screencastify.com/v/r9tvr8otCvPeoXOlxnYS).
