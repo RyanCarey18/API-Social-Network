@@ -8,6 +8,8 @@ A functioning back end api for a social network.
 
 ## Table of Contents
 
+- [Technologies](#Technologies)
+
 - [Installation](#Installation)
 
 - [Usage](#Usage)
@@ -17,6 +19,15 @@ A functioning back end api for a social network.
 - [License](#License)
 
 - [Questions](#Questions)
+
+## Technologies
+
+- HTML
+- JS
+- CSS
+- Express.js
+- MongoDB
+- Mongoose ODM
 
 ## Installation
 
